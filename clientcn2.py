@@ -7,12 +7,12 @@ from tensorflow import keras
 
 
 # Client-specific data paths
-data_path = ".\output\\Part1"  # Change this for each client
+data_path = ".\output\\Part2"  # Change this for each client
 
 IMG_HEIGHT = 128
 IMG_WIDTH = 128
 
-splitfolders.ratio('.\OuputDataset\Part1', output="output\Part1", seed=1345, ratio=(.8,0.1,0.1))  
+splitfolders.ratio('.\OuputDataset\Part2', output="output\Part2", seed=1345, ratio=(.8,0.1,0.1))  
                                                                  
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
     data_path + "\\train",
